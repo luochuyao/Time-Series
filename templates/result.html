@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div align="center">
+<table>
+    <thead>
+    <tr>
+        <th>dataset name</th>
+        <th>Euclidean_kNN_rightRatio</th>
+        <th>Euclidean_kNN_errorRatio</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for content in table %}
+    <tr>
+          {% for i in content %}
+             <td>{{ i }}</td>
+              {% endfor %}
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+</body>
+</html>
